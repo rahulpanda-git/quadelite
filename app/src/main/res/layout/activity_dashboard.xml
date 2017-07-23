@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#77b3d4"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.rahulpanda.isight.Dashboard">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="Digital Eye"
+                android:id="@+id/eye"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="Directions"
+                android:id="@+id/dir"
+                android:layout_below="@+id/eye"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="Our Services"
+                android:id="@+id/services"
+                android:layout_below="@+id/dir"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="Be Aware Solutions"
+                android:id="@+id/solutions"
+                android:layout_below="@+id/services"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="Recognize Services"
+                android:id="@+id/recog"
+                android:layout_below="@+id/solutions"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:background="#FFF"
+                android:text="WEB RTC Services"
+                android:id="@+id/web"
+                android:layout_below="@+id/recog"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
